@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 EXTERNAL_APPS=[
     "client_side",
     "management_side",
+    'doctor_side',
     "django_browser_reload",
 ]
 INSTALLED_APPS += EXTERNAL_APPS
