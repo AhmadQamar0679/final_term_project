@@ -237,7 +237,7 @@
 </style>
 </head>
 <body>
-    {% block content %}{% endblock content %}
+   
 
 <!-- TOP NAVBAR -->
 <nav class="navbar">
@@ -286,15 +286,15 @@
       </button>
     </div>
 
-    <div class="panel-section-label">Favorites</div>
+    <div class="panel-section-label">Management</div>
 
-    <a class="panel-item active" href="#">
+    <a class="panel-item active" href="{% url 'client_home'  %}">
       <div class="panel-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
         </svg>
       </div>
-      <span class="panel-item-name">Messages</span>
+      <span class="panel-item-name">Reception</span>
       <span class="badge">2</span>
     </a>
 
@@ -364,6 +364,7 @@
   <!-- MAIN CONTENT -->
   <main class="main-content">
     <p class="placeholder">← Toggle the side panel using the ☰ menu button</p>
+     {% block content %}{% endblock content %}
   </main>
 </div>
 
